@@ -14,8 +14,8 @@ resource "azurerm_kubernetes_cluster" "example" {
   }
 
   service_principal {
-    client_id     = var.scalr_azurerm_client_id
-    client_secret = var.scalr_azurerm_client_secret
+    client_id     = var.client_id
+    client_secret = var.client_secret
   }
 
   tags = {
