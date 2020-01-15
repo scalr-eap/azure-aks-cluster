@@ -26,10 +26,10 @@ variable "node_size" {
   description = "The instance size of the nodes"
 }
 
-variable "scalr_azurerm_client_id" {
+variable "client_id" {
   description = "The client id to be used for the cluster creation"
 }
 
-variable "scalr_azurerm_client_secret" {
+variable "client_secret" {
   description = "The client secret to be used for the cluster creation"
 }
