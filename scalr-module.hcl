@@ -20,3 +20,11 @@ variable "node_size" {
   cloud = "azure"
   }
 }
+
+variable "client_id" {
+  global_variable = "client_id"
+}
+
+variable "client_secret" {
+  global_variable = "client_secret"
+}
