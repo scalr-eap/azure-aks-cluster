@@ -7,13 +7,6 @@ variable "region" {
   }
 }
 
-variable "resource_group" {
-  policy = "azure.resource_groups"
-  conditions = {
-  cloud = "azure"
-  }
-}
-
 variable "node_size" {
   policy = "cloud.instance.types"
   conditions = {
