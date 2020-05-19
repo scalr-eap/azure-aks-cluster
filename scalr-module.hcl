@@ -11,7 +11,7 @@ variable "node_size" {
   policy = "cloud.instance.types"
   conditions = {
   cloud = "azure"
-  location = var.region
+  cloud.location = var.region
   }
 }
 
