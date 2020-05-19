@@ -7,15 +7,11 @@ variable "cluster_name" {
 }
 
 variable "resource_group" {
-  description = "The name of the existing resource group"
+  description = "The name of a resource group to be created"
 }
 
 variable "cluster_dns_prefix" {
   description = "The DNS prefix for the AKS cluster"
-}
-
-variable "node_pool_name" {
-  description = "The node pool name"
 }
 
 variable "node_count" {
@@ -24,12 +20,4 @@ variable "node_count" {
 
 variable "node_size" {
   description = "The instance size of the nodes"
-}
-
-variable "client_id" {
-  description = "The client id to be used for the cluster creation"
-}
-
-variable "client_secret" {
-  description = "The client secret to be used for the cluster creation"
 }
